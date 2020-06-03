@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29911.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ButtonCMD", "ButtonCMD\ButtonCMD.csproj", "{199A8CFF-EF5E-43C2-ABEF-2ABB87399C2C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{199A8CFF-EF5E-43C2-ABEF-2ABB87399C2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{199A8CFF-EF5E-43C2-ABEF-2ABB87399C2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{199A8CFF-EF5E-43C2-ABEF-2ABB87399C2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{199A8CFF-EF5E-43C2-ABEF-2ABB87399C2C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {14B8FF2B-AE20-4790-A7A6-EC21AC70F5AE}
+	EndGlobalSection
+EndGlobal
