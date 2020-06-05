@@ -19,6 +19,8 @@ namespace ButtonCMD
 
         private void StartProgram_Click(object sender, EventArgs e)
         {
+            //this.Hide();
+
             Main newForm = new Main();
             newForm.Show();
         }

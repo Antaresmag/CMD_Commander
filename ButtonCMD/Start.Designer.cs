@@ -28,32 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.StartProgram = new System.Windows.Forms.Button();
             this.CloseProgram = new System.Windows.Forms.Button();
             this.free_ver = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.textBox1.Font = new System.Drawing.Font("MV Boli", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.Gold;
-            this.textBox1.Location = new System.Drawing.Point(0, 35);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(224, 34);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "Commander";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // StartProgram
             // 
-            this.StartProgram.BackColor = System.Drawing.SystemColors.Control;
+            this.StartProgram.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.StartProgram.FlatAppearance.BorderSize = 0;
+            this.StartProgram.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.StartProgram.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.StartProgram.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.StartProgram.ForeColor = System.Drawing.Color.Green;
-            this.StartProgram.Location = new System.Drawing.Point(138, 150);
+            this.StartProgram.Location = new System.Drawing.Point(116, 87);
             this.StartProgram.Name = "StartProgram";
             this.StartProgram.Size = new System.Drawing.Size(73, 45);
             this.StartProgram.TabIndex = 1;
@@ -63,10 +52,13 @@
             // 
             // CloseProgram
             // 
-            this.CloseProgram.BackColor = System.Drawing.SystemColors.Control;
+            this.CloseProgram.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.CloseProgram.FlatAppearance.BorderSize = 0;
+            this.CloseProgram.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.CloseProgram.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CloseProgram.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.CloseProgram.ForeColor = System.Drawing.Color.Red;
-            this.CloseProgram.Location = new System.Drawing.Point(12, 150);
+            this.CloseProgram.Location = new System.Drawing.Point(25, 87);
             this.CloseProgram.Name = "CloseProgram";
             this.CloseProgram.Size = new System.Drawing.Size(73, 45);
             this.CloseProgram.TabIndex = 2;
@@ -77,22 +69,34 @@
             // free_ver
             // 
             this.free_ver.AutoSize = true;
-            this.free_ver.Location = new System.Drawing.Point(0, 268);
+            this.free_ver.Location = new System.Drawing.Point(-1, 165);
             this.free_ver.Name = "free_ver";
             this.free_ver.Size = new System.Drawing.Size(49, 13);
             this.free_ver.TabIndex = 3;
             this.free_ver.Text = "Free ver.";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("MV Boli", 15.75F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.Gold;
+            this.label1.Location = new System.Drawing.Point(41, 28);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(133, 28);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Commander";
             // 
             // Start
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.ClientSize = new System.Drawing.Size(223, 284);
+            this.ClientSize = new System.Drawing.Size(223, 187);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.free_ver);
             this.Controls.Add(this.CloseProgram);
             this.Controls.Add(this.StartProgram);
-            this.Controls.Add(this.textBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Start";
             this.Text = "Start";
             this.ResumeLayout(false);
@@ -101,10 +105,9 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button StartProgram;
         private System.Windows.Forms.Button CloseProgram;
         private System.Windows.Forms.Label free_ver;
+        private System.Windows.Forms.Label label1;
     }
 }

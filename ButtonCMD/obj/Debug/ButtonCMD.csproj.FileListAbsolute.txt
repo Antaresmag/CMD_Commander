@@ -9,3 +9,14 @@ C:\Users\kunde\source\repos\ButtonCMD\ButtonCMD\obj\Debug\ButtonCMD.exe
 C:\Users\kunde\source\repos\ButtonCMD\ButtonCMD\obj\Debug\ButtonCMD.pdb
 C:\Users\kunde\source\repos\ButtonCMD\ButtonCMD\obj\Debug\ButtonCMD.Start.resources
 C:\Users\kunde\source\repos\ButtonCMD\ButtonCMD\obj\Debug\ButtonCMD.Main.resources
+C:\Users\kunde\OneDrive\Desktop\CMD_Commander\ButtonCMD\bin\Debug\ButtonCMD.exe.config
+C:\Users\kunde\OneDrive\Desktop\CMD_Commander\ButtonCMD\bin\Debug\ButtonCMD.exe
+C:\Users\kunde\OneDrive\Desktop\CMD_Commander\ButtonCMD\bin\Debug\ButtonCMD.pdb
+C:\Users\kunde\OneDrive\Desktop\CMD_Commander\ButtonCMD\obj\Debug\ButtonCMD.csprojAssemblyReference.cache
+C:\Users\kunde\OneDrive\Desktop\CMD_Commander\ButtonCMD\obj\Debug\ButtonCMD.Main.resources
+C:\Users\kunde\OneDrive\Desktop\CMD_Commander\ButtonCMD\obj\Debug\ButtonCMD.Properties.Resources.resources
+C:\Users\kunde\OneDrive\Desktop\CMD_Commander\ButtonCMD\obj\Debug\ButtonCMD.Start.resources
+C:\Users\kunde\OneDrive\Desktop\CMD_Commander\ButtonCMD\obj\Debug\ButtonCMD.csproj.GenerateResource.cache
+C:\Users\kunde\OneDrive\Desktop\CMD_Commander\ButtonCMD\obj\Debug\ButtonCMD.csproj.CoreCompileInputs.cache
+C:\Users\kunde\OneDrive\Desktop\CMD_Commander\ButtonCMD\obj\Debug\ButtonCMD.exe
+C:\Users\kunde\OneDrive\Desktop\CMD_Commander\ButtonCMD\obj\Debug\ButtonCMD.pdb
