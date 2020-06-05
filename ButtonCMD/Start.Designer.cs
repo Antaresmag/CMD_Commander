@@ -99,6 +99,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Start";
             this.Text = "Start";
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Start_MouseMove);
             this.ResumeLayout(false);
             this.PerformLayout();
 

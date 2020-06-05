@@ -103,6 +103,7 @@
             this.face_button.TabIndex = 4;
             this.face_button.Text = "FaceBook";
             this.face_button.UseVisualStyleBackColor = false;
+            this.face_button.Click += new System.EventHandler(this.face_button_Click);
             // 
             // insta_button
             // 
@@ -117,6 +118,7 @@
             this.insta_button.TabIndex = 5;
             this.insta_button.Text = "Instagram";
             this.insta_button.UseVisualStyleBackColor = false;
+            this.insta_button.Click += new System.EventHandler(this.insta_button_Click);
             // 
             // telga_button
             // 
@@ -131,6 +133,7 @@
             this.telga_button.TabIndex = 6;
             this.telga_button.Text = "Telegram";
             this.telga_button.UseVisualStyleBackColor = false;
+            this.telga_button.Click += new System.EventHandler(this.telga_button_Click);
             // 
             // game_button
             // 
@@ -247,6 +250,8 @@
             this.Name = "Main";
             this.Text = "Main";
             this.Load += new System.EventHandler(this.Main_Load);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Main_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Main_MouseMove);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
