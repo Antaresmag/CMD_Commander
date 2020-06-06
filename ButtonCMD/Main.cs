@@ -91,6 +91,7 @@ namespace ButtonCMD
 
         private void films_button_Click(object sender, EventArgs e)
         {
+
             Movies form_mov = new Movies();
             // this.Hide();
             form_mov.Show();

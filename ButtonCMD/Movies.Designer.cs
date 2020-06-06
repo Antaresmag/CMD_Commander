@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Movies));
             this.close_button = new System.Windows.Forms.Button();
             this.films_select_groupBox = new System.Windows.Forms.GroupBox();
             this.Serials_radioButton = new System.Windows.Forms.RadioButton();
@@ -52,7 +53,8 @@
             this.close_button.FlatAppearance.BorderSize = 0;
             this.close_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.close_button.Font = new System.Drawing.Font("Agency FB", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.close_button.Location = new System.Drawing.Point(208, -2);
+            this.close_button.ForeColor = System.Drawing.Color.White;
+            this.close_button.Location = new System.Drawing.Point(221, 0);
             this.close_button.Name = "close_button";
             this.close_button.Size = new System.Drawing.Size(18, 28);
             this.close_button.TabIndex = 14;
@@ -153,7 +155,7 @@
             this.languages_groupBox.ForeColor = System.Drawing.Color.White;
             this.languages_groupBox.Location = new System.Drawing.Point(12, 22);
             this.languages_groupBox.Name = "languages_groupBox";
-            this.languages_groupBox.Size = new System.Drawing.Size(214, 90);
+            this.languages_groupBox.Size = new System.Drawing.Size(214, 100);
             this.languages_groupBox.TabIndex = 16;
             this.languages_groupBox.TabStop = false;
             this.languages_groupBox.Text = "Обреріть мову фільмів";
@@ -185,7 +187,7 @@
             // ua_picture
             // 
             this.ua_picture.Image = global::ButtonCMD.Properties.Resources.ua;
-            this.ua_picture.Location = new System.Drawing.Point(147, 21);
+            this.ua_picture.Location = new System.Drawing.Point(100, 21);
             this.ua_picture.Name = "ua_picture";
             this.ua_picture.Size = new System.Drawing.Size(61, 28);
             this.ua_picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -222,13 +224,17 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.ClientSize = new System.Drawing.Size(238, 390);
+            this.ClientSize = new System.Drawing.Size(239, 390);
             this.Controls.Add(this.search_button);
             this.Controls.Add(this.languages_groupBox);
             this.Controls.Add(this.films_select_groupBox);
             this.Controls.Add(this.close_button);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Movies";
             this.Text = "Movies";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Movies_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Movies_MouseMove);
             this.films_select_groupBox.ResumeLayout(false);
             this.films_select_groupBox.PerformLayout();
             this.languages_groupBox.ResumeLayout(false);

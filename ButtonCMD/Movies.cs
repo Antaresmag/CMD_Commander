@@ -20,6 +20,7 @@ namespace ButtonCMD
         private void close_button_Click(object sender, EventArgs e)
         {
             this.Close();
+
         }
         bool lang_e = false;
         private void english_language_groupBox_CheckedChanged(object sender, EventArgs e)
@@ -146,6 +147,20 @@ namespace ButtonCMD
                 System.Diagnostics.Process.Start("https://animevost.org/");
                 return;
             }
+        }
+        Point lastPoint;
+        private void Movies_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                this.Left += e.X - lastPoint.X;
+                this.Top += e.Y - lastPoint.Y;
+            }
+        }
+
+        private void Movies_MouseDown(object sender, MouseEventArgs e)
+        {
+            lastPoint = new Point(e.X, e.Y);
         }
     }
 }
