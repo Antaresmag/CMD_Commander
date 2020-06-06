@@ -103,5 +103,10 @@ namespace ButtonCMD
             // this.Hide();
             form_game.Show();
         }
+
+        private void insta_button_Click_1(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.instagram.com/");
+        }
     }
 }

@@ -118,6 +118,7 @@
             this.insta_button.TabIndex = 5;
             this.insta_button.Text = "Instagram";
             this.insta_button.UseVisualStyleBackColor = false;
+            this.insta_button.Click += new System.EventHandler(this.insta_button_Click_1);
             // 
             // telga_button
             // 

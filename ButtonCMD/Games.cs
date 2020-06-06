@@ -26,24 +26,28 @@ namespace ButtonCMD
         {
             OnClick(e);
             System.Diagnostics.Process.Start("https://steamcommunity.com/");
+            this.Close();
         }
 
         private void Epic_pictureBox_Click(object sender, EventArgs e)
         {
             OnClick(e);
             System.Diagnostics.Process.Start("https://www.epicgames.com/");
+            this.Close();
         }
 
         private void Uplay_pictureBox_Click(object sender, EventArgs e)
         {
             OnClick(e);
             System.Diagnostics.Process.Start("https://uplay.ubisoft.com/");
+            this.Close();
         }
 
         private void Rock_pictureBox_Click(object sender, EventArgs e)
         {
             OnClick(e);
             System.Diagnostics.Process.Start("https://www.rockstargames.com/");
+            this.Close();
         }
 
         private void close_button_Click(object sender, EventArgs e)
