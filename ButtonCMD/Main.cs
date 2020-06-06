@@ -71,7 +71,7 @@ namespace ButtonCMD
         {
             lastPoint = new Point(e.X, e.Y);
         }
-      private Process telega;
+      //private Process telega;
 
         private void telga_button_Click(object sender, EventArgs e)
         {
@@ -91,7 +91,9 @@ namespace ButtonCMD
 
         private void films_button_Click(object sender, EventArgs e)
         {
-
+            Movies form_mov = new Movies();
+            // this.Hide();
+            form_mov.Show();
         }
 
         private void game_button_Click(object sender, EventArgs e)

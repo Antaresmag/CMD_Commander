@@ -38,8 +38,13 @@
             this.languages_groupBox = new System.Windows.Forms.GroupBox();
             this.english_language_groupBox = new System.Windows.Forms.RadioButton();
             this.ukraine_language_groupBox = new System.Windows.Forms.RadioButton();
+            this.ua_picture = new System.Windows.Forms.PictureBox();
+            this.usa_picture = new System.Windows.Forms.PictureBox();
+            this.search_button = new System.Windows.Forms.Button();
             this.films_select_groupBox.SuspendLayout();
             this.languages_groupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ua_picture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usa_picture)).BeginInit();
             this.SuspendLayout();
             // 
             // close_button
@@ -62,6 +67,7 @@
             this.films_select_groupBox.Controls.Add(this.Premieres_radioButton);
             this.films_select_groupBox.Controls.Add(this.Сartoons_radioButton);
             this.films_select_groupBox.Controls.Add(this.Serials_radioButton);
+            this.films_select_groupBox.Enabled = false;
             this.films_select_groupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.films_select_groupBox.ForeColor = System.Drawing.Color.White;
             this.films_select_groupBox.Location = new System.Drawing.Point(12, 128);
@@ -70,6 +76,7 @@
             this.films_select_groupBox.TabIndex = 15;
             this.films_select_groupBox.TabStop = false;
             this.films_select_groupBox.Text = "Доступні такі варіанти";
+            this.films_select_groupBox.Enter += new System.EventHandler(this.films_select_groupBox_Enter);
             // 
             // Serials_radioButton
             // 
@@ -82,6 +89,7 @@
             this.Serials_radioButton.TabStop = true;
             this.Serials_radioButton.Text = "Серіали";
             this.Serials_radioButton.UseVisualStyleBackColor = true;
+            this.Serials_radioButton.CheckedChanged += new System.EventHandler(this.Serials_radioButton_CheckedChanged);
             // 
             // Сartoons_radioButton
             // 
@@ -94,6 +102,7 @@
             this.Сartoons_radioButton.TabStop = true;
             this.Сartoons_radioButton.Text = "Мультфільми";
             this.Сartoons_radioButton.UseVisualStyleBackColor = true;
+            this.Сartoons_radioButton.CheckedChanged += new System.EventHandler(this.Сartoons_radioButton_CheckedChanged);
             // 
             // Premieres_radioButton
             // 
@@ -106,6 +115,7 @@
             this.Premieres_radioButton.TabStop = true;
             this.Premieres_radioButton.Text = "Прем\'єри";
             this.Premieres_radioButton.UseVisualStyleBackColor = true;
+            this.Premieres_radioButton.CheckedChanged += new System.EventHandler(this.Premieres_radioButton_CheckedChanged);
             // 
             // Online_lessons_radioButton
             // 
@@ -118,6 +128,7 @@
             this.Online_lessons_radioButton.TabStop = true;
             this.Online_lessons_radioButton.Text = "Онлайн уроки";
             this.Online_lessons_radioButton.UseVisualStyleBackColor = true;
+            this.Online_lessons_radioButton.CheckedChanged += new System.EventHandler(this.Online_lessons_radioButton_CheckedChanged);
             // 
             // Anime_radioButton
             // 
@@ -130,9 +141,12 @@
             this.Anime_radioButton.TabStop = true;
             this.Anime_radioButton.Text = "Аніме";
             this.Anime_radioButton.UseVisualStyleBackColor = true;
+            this.Anime_radioButton.CheckedChanged += new System.EventHandler(this.Anime_radioButton_CheckedChanged);
             // 
             // languages_groupBox
             // 
+            this.languages_groupBox.Controls.Add(this.ua_picture);
+            this.languages_groupBox.Controls.Add(this.usa_picture);
             this.languages_groupBox.Controls.Add(this.ukraine_language_groupBox);
             this.languages_groupBox.Controls.Add(this.english_language_groupBox);
             this.languages_groupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
@@ -142,7 +156,7 @@
             this.languages_groupBox.Size = new System.Drawing.Size(214, 90);
             this.languages_groupBox.TabIndex = 16;
             this.languages_groupBox.TabStop = false;
-            this.languages_groupBox.Text = "Обреріть мову";
+            this.languages_groupBox.Text = "Обреріть мову фільмів";
             // 
             // english_language_groupBox
             // 
@@ -154,6 +168,7 @@
             this.english_language_groupBox.TabStop = true;
             this.english_language_groupBox.Text = "English";
             this.english_language_groupBox.UseVisualStyleBackColor = true;
+            this.english_language_groupBox.CheckedChanged += new System.EventHandler(this.english_language_groupBox_CheckedChanged);
             // 
             // ukraine_language_groupBox
             // 
@@ -165,13 +180,50 @@
             this.ukraine_language_groupBox.TabStop = true;
             this.ukraine_language_groupBox.Text = "Українська";
             this.ukraine_language_groupBox.UseVisualStyleBackColor = true;
+            this.ukraine_language_groupBox.CheckedChanged += new System.EventHandler(this.ukraine_language_groupBox_CheckedChanged);
+            // 
+            // ua_picture
+            // 
+            this.ua_picture.Image = global::ButtonCMD.Properties.Resources.ua;
+            this.ua_picture.Location = new System.Drawing.Point(147, 21);
+            this.ua_picture.Name = "ua_picture";
+            this.ua_picture.Size = new System.Drawing.Size(61, 28);
+            this.ua_picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ua_picture.TabIndex = 2;
+            this.ua_picture.TabStop = false;
+            // 
+            // usa_picture
+            // 
+            this.usa_picture.Image = global::ButtonCMD.Properties.Resources.usa;
+            this.usa_picture.Location = new System.Drawing.Point(6, 21);
+            this.usa_picture.Name = "usa_picture";
+            this.usa_picture.Size = new System.Drawing.Size(61, 28);
+            this.usa_picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.usa_picture.TabIndex = 1;
+            this.usa_picture.TabStop = false;
+            // 
+            // search_button
+            // 
+            this.search_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.search_button.FlatAppearance.BorderSize = 0;
+            this.search_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.search_button.Font = new System.Drawing.Font("UD Digi Kyokasho NK-B", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.search_button.ForeColor = System.Drawing.Color.White;
+            this.search_button.Location = new System.Drawing.Point(12, 346);
+            this.search_button.Name = "search_button";
+            this.search_button.Size = new System.Drawing.Size(214, 34);
+            this.search_button.TabIndex = 17;
+            this.search_button.Text = "ПОШУК";
+            this.search_button.UseVisualStyleBackColor = false;
+            this.search_button.Click += new System.EventHandler(this.search_button_Click);
             // 
             // Movies
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.ClientSize = new System.Drawing.Size(265, 450);
+            this.ClientSize = new System.Drawing.Size(238, 390);
+            this.Controls.Add(this.search_button);
             this.Controls.Add(this.languages_groupBox);
             this.Controls.Add(this.films_select_groupBox);
             this.Controls.Add(this.close_button);
@@ -181,6 +233,8 @@
             this.films_select_groupBox.PerformLayout();
             this.languages_groupBox.ResumeLayout(false);
             this.languages_groupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ua_picture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usa_picture)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -197,5 +251,8 @@
         private System.Windows.Forms.GroupBox languages_groupBox;
         private System.Windows.Forms.RadioButton english_language_groupBox;
         private System.Windows.Forms.RadioButton ukraine_language_groupBox;
+        private System.Windows.Forms.PictureBox ua_picture;
+        private System.Windows.Forms.PictureBox usa_picture;
+        private System.Windows.Forms.Button search_button;
     }
 }
