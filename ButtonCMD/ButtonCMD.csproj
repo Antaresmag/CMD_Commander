@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Games.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Games.Designer.cs">
+      <DependentUpon>Games.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +72,9 @@
     <Compile Include="Start.Designer.cs">
       <DependentUpon>Start.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Games.resx">
+      <DependentUpon>Games.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
@@ -100,8 +109,17 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Content Include="Applications\epic.png" />
+    <Content Include="Applications\rockstar.png" />
+    <Content Include="Applications\Steam.jpg" />
     <Content Include="Applications\ua.png" />
+    <Content Include="Applications\uplay.png" />
     <Content Include="Applications\usa.png" />
+    <None Include="Resources\rockstar.png" />
+    <None Include="Resources\uplay.png" />
+    <None Include="Resources\Steam1.jpg" />
+    <None Include="Resources\epic.png" />
+    <None Include="Resources\Steam.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

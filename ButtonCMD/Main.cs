@@ -99,7 +99,9 @@ namespace ButtonCMD
 
         private void game_button_Click(object sender, EventArgs e)
         {
-
+            Games form_game = new Games();
+            // this.Hide();
+            form_game.Show();
         }
     }
 }
