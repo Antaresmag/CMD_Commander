@@ -19,10 +19,9 @@ namespace ButtonCMD
 
         private void StartProgram_Click(object sender, EventArgs e)
         {
-            //this.Hide();
-
-            Main newForm = new Main();
-            newForm.Show();
+            Main form_m = new Main();
+           // this.Hide();
+            form_m.Show();
         }
 
         private void CloseProgram_Click(object sender, EventArgs e)

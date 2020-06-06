@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.eat_button = new System.Windows.Forms.Button();
             this.drink_button = new System.Windows.Forms.Button();
             this.trip_button = new System.Windows.Forms.Button();
@@ -38,10 +39,9 @@
             this.films_button = new System.Windows.Forms.Button();
             this.checkBox_year = new System.Windows.Forms.CheckBox();
             this.drunk_button = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.info_label = new System.Windows.Forms.Label();
             this.close_button = new System.Windows.Forms.Button();
-            this.groupBox1.SuspendLayout();
+            this.process1 = new System.Diagnostics.Process();
             this.SuspendLayout();
             // 
             // eat_button
@@ -118,7 +118,6 @@
             this.insta_button.TabIndex = 5;
             this.insta_button.Text = "Instagram";
             this.insta_button.UseVisualStyleBackColor = false;
-            this.insta_button.Click += new System.EventHandler(this.insta_button_Click);
             // 
             // telga_button
             // 
@@ -149,6 +148,7 @@
             this.game_button.TabIndex = 7;
             this.game_button.Text = "Хочу зіграти";
             this.game_button.UseVisualStyleBackColor = false;
+            this.game_button.Click += new System.EventHandler(this.game_button_Click);
             // 
             // films_button
             // 
@@ -164,12 +164,13 @@
             this.films_button.TabIndex = 8;
             this.films_button.Text = "Хочу фільм";
             this.films_button.UseVisualStyleBackColor = false;
+            this.films_button.Click += new System.EventHandler(this.films_button_Click);
             // 
             // checkBox_year
             // 
             this.checkBox_year.AutoSize = true;
             this.checkBox_year.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.checkBox_year.Location = new System.Drawing.Point(0, 9);
+            this.checkBox_year.Location = new System.Drawing.Point(468, 133);
             this.checkBox_year.Name = "checkBox_year";
             this.checkBox_year.Size = new System.Drawing.Size(141, 21);
             this.checkBox_year.TabIndex = 9;
@@ -183,25 +184,14 @@
             this.drunk_button.FlatAppearance.BorderSize = 0;
             this.drunk_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
             this.drunk_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.drunk_button.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.drunk_button.Location = new System.Drawing.Point(12, 34);
+            this.drunk_button.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.drunk_button.Location = new System.Drawing.Point(468, 156);
             this.drunk_button.Name = "drunk_button";
             this.drunk_button.Size = new System.Drawing.Size(135, 41);
             this.drunk_button.TabIndex = 10;
-            this.drunk_button.Text = "Поганий настрій\r\nтреба випити\r\n";
+            this.drunk_button.Text = "Підняти настрій";
             this.drunk_button.UseVisualStyleBackColor = false;
             this.drunk_button.Click += new System.EventHandler(this.drunk_button_Click);
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.drunk_button);
-            this.groupBox1.Controls.Add(this.checkBox_year);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.groupBox1.Location = new System.Drawing.Point(460, 154);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(156, 81);
-            this.groupBox1.TabIndex = 11;
-            this.groupBox1.TabStop = false;
             // 
             // info_label
             // 
@@ -226,15 +216,26 @@
             this.close_button.UseVisualStyleBackColor = true;
             this.close_button.Click += new System.EventHandler(this.close_button_Click);
             // 
+            // process1
+            // 
+            this.process1.StartInfo.Domain = "";
+            this.process1.StartInfo.LoadUserProfile = false;
+            this.process1.StartInfo.Password = null;
+            this.process1.StartInfo.StandardErrorEncoding = null;
+            this.process1.StartInfo.StandardOutputEncoding = null;
+            this.process1.StartInfo.UserName = "";
+            this.process1.SynchronizingObject = this;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSeaGreen;
             this.ClientSize = new System.Drawing.Size(672, 244);
+            this.Controls.Add(this.drunk_button);
+            this.Controls.Add(this.checkBox_year);
             this.Controls.Add(this.close_button);
             this.Controls.Add(this.info_label);
-            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.films_button);
             this.Controls.Add(this.game_button);
             this.Controls.Add(this.telga_button);
@@ -246,14 +247,13 @@
             this.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "Main";
             this.Text = "Main";
             this.Load += new System.EventHandler(this.Main_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Main_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Main_MouseMove);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -270,8 +270,8 @@
         private System.Windows.Forms.Button films_button;
         private System.Windows.Forms.CheckBox checkBox_year;
         private System.Windows.Forms.Button drunk_button;
-        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label info_label;
         private System.Windows.Forms.Button close_button;
+        private System.Diagnostics.Process process1;
     }
 }

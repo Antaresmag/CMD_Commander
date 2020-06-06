@@ -56,7 +56,6 @@ namespace ButtonCMD
         private void close_button_Click(object sender, EventArgs e)
         {
             this.Close();
-            
         }
         Point lastPoint;
         private void Main_MouseMove(object sender, MouseEventArgs e)
@@ -72,11 +71,12 @@ namespace ButtonCMD
         {
             lastPoint = new Point(e.X, e.Y);
         }
-       // private Process telega;
+      private Process telega;
 
         private void telga_button_Click(object sender, EventArgs e)
         {
-          System.Diagnostics.Process.Start("https://web.telegram.org/");
+            System.Diagnostics.Process.Start("https://web.telegram.org/");
+           // telega = System.Diagnostics.Process.Start("DLC\\Bhop.ahk");
         }
 
         private void face_button_Click(object sender, EventArgs e)
@@ -87,6 +87,16 @@ namespace ButtonCMD
         private void insta_button_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("https://www.instagram.com/");
+        }
+
+        private void films_button_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void game_button_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

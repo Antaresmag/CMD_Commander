@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Start));
             this.StartProgram = new System.Windows.Forms.Button();
             this.CloseProgram = new System.Windows.Forms.Button();
             this.free_ver = new System.Windows.Forms.Label();
@@ -97,7 +98,9 @@
             this.Controls.Add(this.CloseProgram);
             this.Controls.Add(this.StartProgram);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Start";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Start";
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Start_MouseMove);
             this.ResumeLayout(false);
