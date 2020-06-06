@@ -42,8 +42,26 @@ namespace ButtonCMD
 
         private void Rock_pictureBox_Click(object sender, EventArgs e)
         {
-            OnClick(e);
-            System.Diagnostics.Process.Start("https://www.rockstargames.com/");
+
+        }
+
+        private void close_button_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+        Point lastPoint;
+        private void Games_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                this.Left += e.X - lastPoint.X;
+                this.Top += e.Y - lastPoint.Y;
+            }
+        }
+
+        private void Games_MouseDown(object sender, MouseEventArgs e)
+        {
+            lastPoint = new Point(e.X, e.Y);
         }
     }
 }

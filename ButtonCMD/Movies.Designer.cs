@@ -31,17 +31,17 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Movies));
             this.close_button = new System.Windows.Forms.Button();
             this.films_select_groupBox = new System.Windows.Forms.GroupBox();
-            this.Serials_radioButton = new System.Windows.Forms.RadioButton();
-            this.Сartoons_radioButton = new System.Windows.Forms.RadioButton();
-            this.Premieres_radioButton = new System.Windows.Forms.RadioButton();
-            this.Online_lessons_radioButton = new System.Windows.Forms.RadioButton();
             this.Anime_radioButton = new System.Windows.Forms.RadioButton();
+            this.Online_lessons_radioButton = new System.Windows.Forms.RadioButton();
+            this.Premieres_radioButton = new System.Windows.Forms.RadioButton();
+            this.Сartoons_radioButton = new System.Windows.Forms.RadioButton();
+            this.Serials_radioButton = new System.Windows.Forms.RadioButton();
             this.languages_groupBox = new System.Windows.Forms.GroupBox();
-            this.english_language_groupBox = new System.Windows.Forms.RadioButton();
             this.ukraine_language_groupBox = new System.Windows.Forms.RadioButton();
+            this.english_language_groupBox = new System.Windows.Forms.RadioButton();
+            this.search_button = new System.Windows.Forms.Button();
             this.ua_picture = new System.Windows.Forms.PictureBox();
             this.usa_picture = new System.Windows.Forms.PictureBox();
-            this.search_button = new System.Windows.Forms.Button();
             this.films_select_groupBox.SuspendLayout();
             this.languages_groupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ua_picture)).BeginInit();
@@ -80,44 +80,18 @@
             this.films_select_groupBox.Text = "Доступні такі варіанти";
             this.films_select_groupBox.Enter += new System.EventHandler(this.films_select_groupBox_Enter);
             // 
-            // Serials_radioButton
+            // Anime_radioButton
             // 
-            this.Serials_radioButton.AutoSize = true;
-            this.Serials_radioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Serials_radioButton.Location = new System.Drawing.Point(6, 28);
-            this.Serials_radioButton.Name = "Serials_radioButton";
-            this.Serials_radioButton.Size = new System.Drawing.Size(117, 29);
-            this.Serials_radioButton.TabIndex = 0;
-            this.Serials_radioButton.TabStop = true;
-            this.Serials_radioButton.Text = "Серіали";
-            this.Serials_radioButton.UseVisualStyleBackColor = true;
-            this.Serials_radioButton.CheckedChanged += new System.EventHandler(this.Serials_radioButton_CheckedChanged);
-            // 
-            // Сartoons_radioButton
-            // 
-            this.Сartoons_radioButton.AutoSize = true;
-            this.Сartoons_radioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Сartoons_radioButton.Location = new System.Drawing.Point(6, 63);
-            this.Сartoons_radioButton.Name = "Сartoons_radioButton";
-            this.Сartoons_radioButton.Size = new System.Drawing.Size(175, 29);
-            this.Сartoons_radioButton.TabIndex = 1;
-            this.Сartoons_radioButton.TabStop = true;
-            this.Сartoons_radioButton.Text = "Мультфільми";
-            this.Сartoons_radioButton.UseVisualStyleBackColor = true;
-            this.Сartoons_radioButton.CheckedChanged += new System.EventHandler(this.Сartoons_radioButton_CheckedChanged);
-            // 
-            // Premieres_radioButton
-            // 
-            this.Premieres_radioButton.AutoSize = true;
-            this.Premieres_radioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Premieres_radioButton.Location = new System.Drawing.Point(6, 98);
-            this.Premieres_radioButton.Name = "Premieres_radioButton";
-            this.Premieres_radioButton.Size = new System.Drawing.Size(131, 29);
-            this.Premieres_radioButton.TabIndex = 2;
-            this.Premieres_radioButton.TabStop = true;
-            this.Premieres_radioButton.Text = "Прем\'єри";
-            this.Premieres_radioButton.UseVisualStyleBackColor = true;
-            this.Premieres_radioButton.CheckedChanged += new System.EventHandler(this.Premieres_radioButton_CheckedChanged);
+            this.Anime_radioButton.AutoSize = true;
+            this.Anime_radioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Anime_radioButton.Location = new System.Drawing.Point(6, 168);
+            this.Anime_radioButton.Name = "Anime_radioButton";
+            this.Anime_radioButton.Size = new System.Drawing.Size(93, 29);
+            this.Anime_radioButton.TabIndex = 4;
+            this.Anime_radioButton.TabStop = true;
+            this.Anime_radioButton.Text = "Аніме";
+            this.Anime_radioButton.UseVisualStyleBackColor = true;
+            this.Anime_radioButton.CheckedChanged += new System.EventHandler(this.Anime_radioButton_CheckedChanged);
             // 
             // Online_lessons_radioButton
             // 
@@ -132,18 +106,44 @@
             this.Online_lessons_radioButton.UseVisualStyleBackColor = true;
             this.Online_lessons_radioButton.CheckedChanged += new System.EventHandler(this.Online_lessons_radioButton_CheckedChanged);
             // 
-            // Anime_radioButton
+            // Premieres_radioButton
             // 
-            this.Anime_radioButton.AutoSize = true;
-            this.Anime_radioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Anime_radioButton.Location = new System.Drawing.Point(6, 168);
-            this.Anime_radioButton.Name = "Anime_radioButton";
-            this.Anime_radioButton.Size = new System.Drawing.Size(93, 29);
-            this.Anime_radioButton.TabIndex = 4;
-            this.Anime_radioButton.TabStop = true;
-            this.Anime_radioButton.Text = "Аніме";
-            this.Anime_radioButton.UseVisualStyleBackColor = true;
-            this.Anime_radioButton.CheckedChanged += new System.EventHandler(this.Anime_radioButton_CheckedChanged);
+            this.Premieres_radioButton.AutoSize = true;
+            this.Premieres_radioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Premieres_radioButton.Location = new System.Drawing.Point(6, 98);
+            this.Premieres_radioButton.Name = "Premieres_radioButton";
+            this.Premieres_radioButton.Size = new System.Drawing.Size(131, 29);
+            this.Premieres_radioButton.TabIndex = 2;
+            this.Premieres_radioButton.TabStop = true;
+            this.Premieres_radioButton.Text = "Прем\'єри";
+            this.Premieres_radioButton.UseVisualStyleBackColor = true;
+            this.Premieres_radioButton.CheckedChanged += new System.EventHandler(this.Premieres_radioButton_CheckedChanged);
+            // 
+            // Сartoons_radioButton
+            // 
+            this.Сartoons_radioButton.AutoSize = true;
+            this.Сartoons_radioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Сartoons_radioButton.Location = new System.Drawing.Point(6, 63);
+            this.Сartoons_radioButton.Name = "Сartoons_radioButton";
+            this.Сartoons_radioButton.Size = new System.Drawing.Size(175, 29);
+            this.Сartoons_radioButton.TabIndex = 1;
+            this.Сartoons_radioButton.TabStop = true;
+            this.Сartoons_radioButton.Text = "Мультфільми";
+            this.Сartoons_radioButton.UseVisualStyleBackColor = true;
+            this.Сartoons_radioButton.CheckedChanged += new System.EventHandler(this.Сartoons_radioButton_CheckedChanged);
+            // 
+            // Serials_radioButton
+            // 
+            this.Serials_radioButton.AutoSize = true;
+            this.Serials_radioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Serials_radioButton.Location = new System.Drawing.Point(6, 28);
+            this.Serials_radioButton.Name = "Serials_radioButton";
+            this.Serials_radioButton.Size = new System.Drawing.Size(117, 29);
+            this.Serials_radioButton.TabIndex = 0;
+            this.Serials_radioButton.TabStop = true;
+            this.Serials_radioButton.Text = "Серіали";
+            this.Serials_radioButton.UseVisualStyleBackColor = true;
+            this.Serials_radioButton.CheckedChanged += new System.EventHandler(this.Serials_radioButton_CheckedChanged);
             // 
             // languages_groupBox
             // 
@@ -160,18 +160,6 @@
             this.languages_groupBox.TabStop = false;
             this.languages_groupBox.Text = "Обреріть мову фільмів";
             // 
-            // english_language_groupBox
-            // 
-            this.english_language_groupBox.AutoSize = true;
-            this.english_language_groupBox.Location = new System.Drawing.Point(6, 55);
-            this.english_language_groupBox.Name = "english_language_groupBox";
-            this.english_language_groupBox.Size = new System.Drawing.Size(77, 20);
-            this.english_language_groupBox.TabIndex = 0;
-            this.english_language_groupBox.TabStop = true;
-            this.english_language_groupBox.Text = "English";
-            this.english_language_groupBox.UseVisualStyleBackColor = true;
-            this.english_language_groupBox.CheckedChanged += new System.EventHandler(this.english_language_groupBox_CheckedChanged);
-            // 
             // ukraine_language_groupBox
             // 
             this.ukraine_language_groupBox.AutoSize = true;
@@ -184,25 +172,17 @@
             this.ukraine_language_groupBox.UseVisualStyleBackColor = true;
             this.ukraine_language_groupBox.CheckedChanged += new System.EventHandler(this.ukraine_language_groupBox_CheckedChanged);
             // 
-            // ua_picture
+            // english_language_groupBox
             // 
-            this.ua_picture.Image = global::ButtonCMD.Properties.Resources.ua;
-            this.ua_picture.Location = new System.Drawing.Point(100, 21);
-            this.ua_picture.Name = "ua_picture";
-            this.ua_picture.Size = new System.Drawing.Size(61, 28);
-            this.ua_picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ua_picture.TabIndex = 2;
-            this.ua_picture.TabStop = false;
-            // 
-            // usa_picture
-            // 
-            this.usa_picture.Image = global::ButtonCMD.Properties.Resources.usa;
-            this.usa_picture.Location = new System.Drawing.Point(6, 21);
-            this.usa_picture.Name = "usa_picture";
-            this.usa_picture.Size = new System.Drawing.Size(61, 28);
-            this.usa_picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.usa_picture.TabIndex = 1;
-            this.usa_picture.TabStop = false;
+            this.english_language_groupBox.AutoSize = true;
+            this.english_language_groupBox.Location = new System.Drawing.Point(6, 55);
+            this.english_language_groupBox.Name = "english_language_groupBox";
+            this.english_language_groupBox.Size = new System.Drawing.Size(77, 20);
+            this.english_language_groupBox.TabIndex = 0;
+            this.english_language_groupBox.TabStop = true;
+            this.english_language_groupBox.Text = "English";
+            this.english_language_groupBox.UseVisualStyleBackColor = true;
+            this.english_language_groupBox.CheckedChanged += new System.EventHandler(this.english_language_groupBox_CheckedChanged);
             // 
             // search_button
             // 
@@ -218,6 +198,26 @@
             this.search_button.Text = "ПОШУК";
             this.search_button.UseVisualStyleBackColor = false;
             this.search_button.Click += new System.EventHandler(this.search_button_Click);
+            // 
+            // ua_picture
+            // 
+            this.ua_picture.Image = global::ButtonCMD.Properties.Resources.ua;
+            this.ua_picture.Location = new System.Drawing.Point(100, 21);
+            this.ua_picture.Name = "ua_picture";
+            this.ua_picture.Size = new System.Drawing.Size(61, 28);
+            this.ua_picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ua_picture.TabIndex = 2;
+            this.ua_picture.TabStop = false;
+            // 
+            // usa_picture
+            // 
+            this.usa_picture.Image = ((System.Drawing.Image)(resources.GetObject("usa_picture.Image")));
+            this.usa_picture.Location = new System.Drawing.Point(6, 21);
+            this.usa_picture.Name = "usa_picture";
+            this.usa_picture.Size = new System.Drawing.Size(61, 28);
+            this.usa_picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.usa_picture.TabIndex = 1;
+            this.usa_picture.TabStop = false;
             // 
             // Movies
             // 

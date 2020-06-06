@@ -107,14 +107,13 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <Content Include="Applications\epic.png" />
-    <Content Include="Applications\rockstar.png" />
-    <Content Include="Applications\Steam.jpg" />
-    <Content Include="Applications\ua.png" />
-    <Content Include="Applications\uplay.png" />
-    <Content Include="Applications\usa.png" />
+    <Content Include="Resources\ua.png" />
+    <None Include="Resources\ua1.png" />
+    <Content Include="Resources\usa.png" />
+    <None Include="Resources\usa1.png" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Resources\rockstar.png" />
     <None Include="Resources\uplay.png" />
     <None Include="Resources\Steam1.jpg" />

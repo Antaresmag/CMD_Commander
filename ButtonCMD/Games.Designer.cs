@@ -28,27 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Steam_pictureBox = new System.Windows.Forms.PictureBox();
             this.штащ_label = new System.Windows.Forms.Label();
-            this.Epic_pictureBox = new System.Windows.Forms.PictureBox();
-            this.Uplay_pictureBox = new System.Windows.Forms.PictureBox();
             this.Rock_pictureBox = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.Steam_pictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Epic_pictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Uplay_pictureBox)).BeginInit();
+            this.Uplay_pictureBox = new System.Windows.Forms.PictureBox();
+            this.Epic_pictureBox = new System.Windows.Forms.PictureBox();
+            this.Steam_pictureBox = new System.Windows.Forms.PictureBox();
+            this.close_button = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Rock_pictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Uplay_pictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Epic_pictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Steam_pictureBox)).BeginInit();
             this.SuspendLayout();
-            // 
-            // Steam_pictureBox
-            // 
-            this.Steam_pictureBox.Image = global::ButtonCMD.Properties.Resources.Steam1;
-            this.Steam_pictureBox.Location = new System.Drawing.Point(44, 71);
-            this.Steam_pictureBox.Name = "Steam_pictureBox";
-            this.Steam_pictureBox.Size = new System.Drawing.Size(60, 55);
-            this.Steam_pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Steam_pictureBox.TabIndex = 1;
-            this.Steam_pictureBox.TabStop = false;
-            this.Steam_pictureBox.Click += new System.EventHandler(this.Steam_pictureBox_Click);
             // 
             // штащ_label
             // 
@@ -59,28 +49,6 @@
             this.штащ_label.Size = new System.Drawing.Size(504, 25);
             this.штащ_label.TabIndex = 2;
             this.штащ_label.Text = "Оберіть та натисніть на одну з ігрових платформ";
-            // 
-            // Epic_pictureBox
-            // 
-            this.Epic_pictureBox.Image = global::ButtonCMD.Properties.Resources.epic;
-            this.Epic_pictureBox.Location = new System.Drawing.Point(155, 71);
-            this.Epic_pictureBox.Name = "Epic_pictureBox";
-            this.Epic_pictureBox.Size = new System.Drawing.Size(60, 55);
-            this.Epic_pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Epic_pictureBox.TabIndex = 3;
-            this.Epic_pictureBox.TabStop = false;
-            this.Epic_pictureBox.Click += new System.EventHandler(this.Epic_pictureBox_Click);
-            // 
-            // Uplay_pictureBox
-            // 
-            this.Uplay_pictureBox.Image = global::ButtonCMD.Properties.Resources.uplay;
-            this.Uplay_pictureBox.Location = new System.Drawing.Point(273, 71);
-            this.Uplay_pictureBox.Name = "Uplay_pictureBox";
-            this.Uplay_pictureBox.Size = new System.Drawing.Size(60, 55);
-            this.Uplay_pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Uplay_pictureBox.TabIndex = 4;
-            this.Uplay_pictureBox.TabStop = false;
-            this.Uplay_pictureBox.Click += new System.EventHandler(this.Uplay_pictureBox_Click);
             // 
             // Rock_pictureBox
             // 
@@ -93,24 +61,73 @@
             this.Rock_pictureBox.TabStop = false;
             this.Rock_pictureBox.Click += new System.EventHandler(this.Rock_pictureBox_Click);
             // 
+            // Uplay_pictureBox
+            // 
+            this.Uplay_pictureBox.Image = global::ButtonCMD.Properties.Resources.uplay;
+            this.Uplay_pictureBox.Location = new System.Drawing.Point(273, 71);
+            this.Uplay_pictureBox.Name = "Uplay_pictureBox";
+            this.Uplay_pictureBox.Size = new System.Drawing.Size(60, 55);
+            this.Uplay_pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Uplay_pictureBox.TabIndex = 4;
+            this.Uplay_pictureBox.TabStop = false;
+            this.Uplay_pictureBox.Click += new System.EventHandler(this.Uplay_pictureBox_Click);
+            // 
+            // Epic_pictureBox
+            // 
+            this.Epic_pictureBox.Image = global::ButtonCMD.Properties.Resources.epic;
+            this.Epic_pictureBox.Location = new System.Drawing.Point(155, 71);
+            this.Epic_pictureBox.Name = "Epic_pictureBox";
+            this.Epic_pictureBox.Size = new System.Drawing.Size(60, 55);
+            this.Epic_pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Epic_pictureBox.TabIndex = 3;
+            this.Epic_pictureBox.TabStop = false;
+            this.Epic_pictureBox.Click += new System.EventHandler(this.Epic_pictureBox_Click);
+            // 
+            // Steam_pictureBox
+            // 
+            this.Steam_pictureBox.Image = global::ButtonCMD.Properties.Resources.Steam1;
+            this.Steam_pictureBox.Location = new System.Drawing.Point(44, 71);
+            this.Steam_pictureBox.Name = "Steam_pictureBox";
+            this.Steam_pictureBox.Size = new System.Drawing.Size(60, 55);
+            this.Steam_pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Steam_pictureBox.TabIndex = 1;
+            this.Steam_pictureBox.TabStop = false;
+            this.Steam_pictureBox.Click += new System.EventHandler(this.Steam_pictureBox_Click);
+            // 
+            // close_button
+            // 
+            this.close_button.FlatAppearance.BorderSize = 0;
+            this.close_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.close_button.Location = new System.Drawing.Point(498, -2);
+            this.close_button.Name = "close_button";
+            this.close_button.Size = new System.Drawing.Size(32, 27);
+            this.close_button.TabIndex = 6;
+            this.close_button.Text = "x";
+            this.close_button.UseVisualStyleBackColor = true;
+            this.close_button.Click += new System.EventHandler(this.close_button_Click);
+            // 
             // Games
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSeaGreen;
             this.ClientSize = new System.Drawing.Size(532, 188);
+            this.Controls.Add(this.close_button);
             this.Controls.Add(this.Rock_pictureBox);
             this.Controls.Add(this.Uplay_pictureBox);
             this.Controls.Add(this.Epic_pictureBox);
             this.Controls.Add(this.штащ_label);
             this.Controls.Add(this.Steam_pictureBox);
             this.ForeColor = System.Drawing.Color.White;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Games";
             this.Text = "Games";
-            ((System.ComponentModel.ISupportInitialize)(this.Steam_pictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Epic_pictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Uplay_pictureBox)).EndInit();
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Games_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Games_MouseMove);
             ((System.ComponentModel.ISupportInitialize)(this.Rock_pictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Uplay_pictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Epic_pictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Steam_pictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -122,5 +139,6 @@
         private System.Windows.Forms.PictureBox Epic_pictureBox;
         private System.Windows.Forms.PictureBox Uplay_pictureBox;
         private System.Windows.Forms.PictureBox Rock_pictureBox;
+        private System.Windows.Forms.Button close_button;
     }
 }
