@@ -42,7 +42,8 @@ namespace ButtonCMD
 
         private void Rock_pictureBox_Click(object sender, EventArgs e)
         {
-
+            OnClick(e);
+            System.Diagnostics.Process.Start("https://www.rockstargames.com/");
         }
 
         private void close_button_Click(object sender, EventArgs e)
